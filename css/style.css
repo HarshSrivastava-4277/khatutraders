@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+    --green: green;
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0 .1rem 1rem rgba(0,0,0.1);
+    --border:  2rem solid rgba(0,0,0.1);
+    --outline:  .1rem solid rgba(0,0,0.1);
+}
+
+
+
+*
+{
+    
+   font-family: "Poppins", sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+   border: none;
+   text-decoration: none;
+   transition: all.2s linear;
+  
+}
+
+
+html
+{
+font-size: 62.5%;
+overflow-x: hidden;
+scroll-behavior: smooth;
+scroll-padding-top:7rem;
+}
+
+body{
+    background-color: #eee;
+}
+
+
+.btn
+{
+    border: .2rem solid var(--bLack); 
+    margin-top: 1rem; 
+    display : inline-block;
+     padding: .8rem 3rem; 
+     font-size: 1.7rem;
+    border-radius: .5rem;
+    color: var(--black);
+    cursor: pointer;
+    background: none;
+}
+
+.btn:hover
+{
+    background: var(--green);
+    color: #fff;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+.heading
+{
+    text-align: center;
+    padding: 2rem 0;
+}
+
+
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9% ;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+}
+
+
+.header .logo
+{
+    font-size: 3rem;
+    font-weight:bolder;
+}
+
+.header .logo i
+{
+    color: var(--green);
+}
+
+
+.header .navbar a
+{
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: var(--black);
+}
+
+
+.header .navbar a:hover
+{
+    color: var(--green);
+}
+
+
+.header .icons div
+{
+    border: 0px solid;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: var(--black);
+    font-size: 2rem;
+    margin-right: .3rem;
+    text-align: center;
+}
+
+
+
+.header .icons div:hover
+{
+    background: var(--green);
+    color: white;
+}  
+
+#menu-btn
+{
+    display: none;
+}
+
+.header .navbar.active
+{
+    right: 2rem;
+    transition: .4;
+}
+
+
+
+.header .login-form
+{
+    border: 0px solid;
+    position: absolute;
+    width: 35rem;
+    top: 110%;
+    right: -110%;
+    box-shadow: var(--box-shadow);
+    padding: 3rem;
+    border-radius: 5rem;
+    background: #fff;
+    text-align: center;
+}
+
+
+.header .login-form.active
+{
+    right: 1.8rem;
+    transition: .4s linear;
+}
+
+
+.header .login-form h3{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.header .login-form .box
+{
+    width: 100%;
+    border: 0px solid;
+    margin: .7rem o;
+    background: #eee;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--bLack);
+    text-transform: none;
+}
+
+
+.header .login-form p
+{
+    font-size: 1.2rem;
+    padding: .5rem o;
+    color:  var(--light-color);
+}
+
+.header .login-form p a
+{
+    color: var(--green);
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 991px)
+{
+    
+    html
+    {
+    font-size: 55%;
+    }
+    .header
+    {
+        padding: 2 rem;
+    }
+
+}
+
+
+
+@media (max-width: 768px)
+{
+   
+    #menu-btn
+    {
+    display: inline-block;
+    }
+    .header .navbar
+    {
+        position:absolute;
+        top: 110%;
+        right: -110rem;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        background: #fff;
+    }
+    .header .navbar a
+    {
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+}
+
+
+
+@media (max-width: 450px)
+{
+    
+    html
+    {
+    font-size: 50%;
+    }
+
+}
